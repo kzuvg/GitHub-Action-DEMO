@@ -8,14 +8,13 @@ jobs:
 
   code:
     runs-on: ubuntu-slim
-
     steps:
       - name: code
         run: echo "Code from GitHub"
 
   build:
     runs-on: ubuntu-22.04
-
+    needs: code
     steps:
       - name: build continue-on-er
         run: echo "build ho gya"

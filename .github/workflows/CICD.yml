@@ -1,0 +1,21 @@
+name: CICD
+
+on:
+  workflow_dispatch:
+
+
+jobs:
+
+  code:
+    runs-on: ubuntu-slim
+
+    steps:
+      - name: code
+        run: echo "Code from GitHub"
+
+  build:
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: build continue-on-er
+        run: echo "build ho gya"

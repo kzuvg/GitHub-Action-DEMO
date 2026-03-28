@@ -1,7 +1,18 @@
 name: CICD
 
 on:
-  workflow_dispatch:
+  workflow_dispatch: 
+    inputs:
+      enviorements:
+        description: This is a enviorements value wher this workflow rus
+        default: dev
+        required: true
+        type: choice
+        options:
+          - dev
+          - staging
+          - main
+      
 
 
 jobs:

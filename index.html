@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaitanya | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: #fff;
+        }
+
+        header {
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #020617;
+        }
+
+        header h1 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #fff;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+        }
+
+        .hero span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            margin-top: 15px;
+            max-width: 600px;
+            color: #94a3b8;
+        }
+
+        .btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #38bdf8;
+            border: none;
+            color: #000;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 60px 50px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #38bdf8;
+        }
+
+        .about p {
+            max-width: 700px;
+            color: #94a3b8;
+        }
+
+        .skills span {
+            display: inline-block;
+            background: #1e293b;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #020617;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Chaitanya</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Hi, I'm <span>Chaitanya</span></h2>
+    <p>
+        Data Science Enthusiast | Backend Developer | DevOps Learner  
+        Passionate about building scalable systems and solving real-world problems.
+    </p>
+    <button class="btn">View My Work</button>
+</section>
+
+<section id="about" class="about">
+    <h2 class="section-title">About Me</h2>
+    <p>
+        I am a passionate developer with experience in Data Science, Backend Development, and DevOps. 
+        I have worked on real-world projects involving machine learning, cloud systems, and automation. 
+        Currently, I am expanding my skills in Docker, CI/CD pipelines, and scalable architectures.
+    </p>
+</section>
+
+<section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills">
+        <span>Python</span>
+        <span>Pandas</span>
+        <span>NumPy</span>
+        <span>Matplotlib</span>
+        <span>MySQL</span>
+        <span>Node.js</span>
+        <span>Docker</span>
+        <span>GitHub Actions</span>
+        <span>REST APIs</span>
+        <span>Data Analysis</span>
+    </div>
+</section>
+
+<section id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="projects">
+        <div class="project-card">
+            <h3>Cryptocurrency Analysis</h3>
+            <p>Analyzed Bitcoin price trends and built trading strategies using Python.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Railway Management System</h3>
+            <p>Database-driven system using MySQL to manage trains and user data.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Expense Tracker Web App</h3>
+            <p>Two-tier web app containerized using Docker and Docker Compose.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Environmental Monitoring System</h3>
+            <p>IoT-based system using Arduino sensors for industrial safety alerts.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Chaitanya | Built with passion</p>
+</footer>
+
+</body>
+</html>

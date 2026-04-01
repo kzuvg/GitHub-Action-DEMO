@@ -1,0 +1,15 @@
+name: python linter
+
+on:
+  workflow_dispatch:
+
+
+jobs:
+
+  validate:
+    runs-on: ubuntu-22.04
+    strategy:
+      matrix:
+        python-version: ["3.9", "3.10"]
+
+    

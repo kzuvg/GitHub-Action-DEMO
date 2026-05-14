@@ -1,0 +1,29 @@
+name: CICD
+
+on:
+ workflow_dispatch:
+   inputs:
+     environments: This is a env
+     required: true
+     default: dev
+     type: choice
+     options:
+       - dev
+       - main
+       - stagin
+
+jobs:
+
+  code:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: checkout code
+        run: echo "code checkout ho gaya"
+
+  run:
+   runs-on: ubuntu-22.04
+   steps:
+     - name: run code
+      run: echo "code run ho gaya"
+     
+     

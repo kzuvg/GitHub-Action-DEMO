@@ -2,15 +2,16 @@ name: CICD
 
 on:
  workflow_dispatch:
-   inputs:
-     environments: This is a env
-     required: true
-     default: dev
-     type: choice
-     options:
-       - dev
-       - main
-       - stagin
+  inputs:
+   environments:
+    description: "This is an env"
+    default: dev
+    required: true
+    type: choice
+    options:
+     - dev
+     - main
+     - staging
 
 jobs:
 
@@ -24,6 +25,6 @@ jobs:
    runs-on: ubuntu-22.04
    steps:
      - name: run code
-      run: echo "code run ho gaya"
+       run: echo "code run ho gaya"
      
      
